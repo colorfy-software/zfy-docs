@@ -8,7 +8,7 @@ If you're looking for how to bundle and manage several stores at once, look into
 
 ## Creation
 
-[**`createStore()`**](../api-reference/createstore.md) is the function that allows you to create a zustand store. As your primary interface with the library, we tried to make it as simple to use as possible. It only expects the store **`name`**, its default **`data`** and you can also provide some **`options`**. That last argument is where you can enable the middlewares zfy provides out-of-the-box, like [**`persist`**](../api-reference/types/createstoreoptionstype.md#persist) or [**`log`**](../api-reference/types/createstoreoptionstype.md#persist) or provide your own via [**`customMiddlewares`**](../api-reference/types/createstoreoptionstype.md#custommiddlewares).
+[**`createStore()`**](../api/createstore.md) is the function that allows you to create a zustand store. As your primary interface with the library, we tried to make it as simple to use as possible. It only expects the store **`name`**, its default **`data`** and you can also provide some **`options`**. That last argument is where you can enable the middlewares zfy provides out-of-the-box, like [**`persist`**](../api/types/createstoreoptionstype.md#persist) or [**`log`**](../api/types/createstoreoptionstype.md#persist) or provide your own via [**`customMiddlewares`**](../api/types/createstoreoptionstype.md#custommiddlewares).
 
 {% tabs %}
 {% tab title="user-store.ts" %}
@@ -58,7 +58,7 @@ It's important to note that, of course, **zustand still works as you'd expect**,
 
 ### **How to access data**
 
-The data you want to use and display in your app is explicitly put inside the `getState().data` returned by [**`createaStore()`**](../api-reference/createstore.md) and only there.
+The data you want to use and display in your app is explicitly put inside the `getState().data` returned by [**`createaStore()`**](../api/createstore.md) and only there.
 
 {% hint style="warning" %}
 No matter which type of data you want to put inside a store: it will always be available from `getState().data`, not the top level `getState()`.
@@ -230,7 +230,7 @@ export default {
 {% endtabs %}
 
 {% hint style="info" %}
-If you've enabled the provided [**persist**](../api-reference/types/createstoreoptionstype.md#persist) middleware on a store, **`update()` ** will automatically take care of saving `data` in a way that will allow rehydration to work without you having to do anything else.
+If you've enabled the provided [**persist**](../api/types/createstoreoptionstype.md#persist) middleware on a store, **`update()` ** will automatically take care of saving `data` in a way that will allow rehydration to work without you having to do anything else.
 {% endhint %}
 
 #### **`reset()`**&#x20;

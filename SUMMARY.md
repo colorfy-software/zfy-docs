@@ -10,20 +10,20 @@
 * [Handling multiple stores](guides/handling-multiple-stores.md)
 * [Type checking with TypeScript](guides/type-checking-with-typescript.md)
 
-## 📚 API reference
+## 📚 API reference <a href="#api" id="api"></a>
 
-* [Types](api-reference/types/README.md)
-  * [CreateStoreType](api-reference/types/createstoretype.md)
-  * [CreateStoreConfigType](api-reference/types/createstoreconfigtype.md)
-  * [CreateStoreOptionsType](api-reference/types/createstoreoptionstype.md)
-  * [StoreType](api-reference/types/storetype.md)
-  * [ZfyMiddlewareType](api-reference/types/zfymiddlewaretype.md)
-  * [InitStoresType](api-reference/types/initstorestype.md)
-  * [InitStoresResetOptionsType](api-reference/types/initstoresresetoptionstype.md)
-* [createStore](api-reference/createstore.md)
-* [initStores](api-reference/initstores.md)
-* [PersistGate](api-reference/persistgate.md)
-* [useRehydrate](api-reference/userehydrate.md)
+* [Types](api/types/README.md)
+  * [CreateStoreType](api/types/createstoretype.md)
+  * [CreateStoreConfigType](api/types/createstoreconfigtype.md)
+  * [CreateStoreOptionsType](api/types/createstoreoptionstype.md)
+  * [StoreType](api/types/storetype.md)
+  * [ZfyMiddlewareType](api/types/zfymiddlewaretype.md)
+  * [InitStoresType](api/types/initstorestype.md)
+  * [InitStoresResetOptionsType](api/types/initstoresresetoptionstype.md)
+* [createStore](api/createstore.md)
+* [initStores](api/initstores.md)
+* [PersistGate](api/persistgate.md)
+* [useRehydrate](api/userehydrate.md)
 
 ## 🗃 Others
 

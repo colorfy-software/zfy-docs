@@ -3,12 +3,12 @@
 Previous versions of zfy used to rely on a custom persistence solution. Fortunately, zustand added built-in support for this feature in [v3.1.4](https://github.com/pmndrs/zustand/releases/tag/v3.1.4). Therefore: zfy simply employs zustand's [persist middleware](https://github.com/pmndrs/zustand/wiki/Persisting-the-store's-data) and tries to offer an easier API to use.
 
 {% hint style="info" %}
-Refer to the [**`CreateStoreOptionsType.persist`**](../api-reference/types/createstoreoptionstype.md#persist)to read the full API reference.
+Refer to the [**`CreateStoreOptionsType.persist`**](../api/types/createstoreoptionstype.md#persist)to read the full API reference.
 {% endhint %}
 
 ## Persistence
 
-Data is persisted on a store to store basis. In order to make a store persist its `data`, you need to provide the `persist` option to [**`createStore()`**](../api-reference/createstore.md) 3rd argument and specify which storage solution you'd like to use:
+Data is persisted on a store to store basis. In order to make a store persist its `data`, you need to provide the `persist` option to [**`createStore()`**](../api/createstore.md) 3rd argument and specify which storage solution you'd like to use:
 
 ```typescript
 import AsyncStorage from '@react-native-async-storage/async-storage'
@@ -68,7 +68,7 @@ From there you're all set. Just use `getState().update()` to update your store a
 
 Similarly to the persistence solution, zfy directly uses zustand's rehydration under the hood and simply exposes it via a different (hopefully simpler) API.
 
-Usually, when it comes to rehydration, you might want to hide all (or part) of your app while the necessary stores are rehydrating. zfy provides 2 solutions out of the box to do so: a component - [**`<PersistGate/>`**](../api-reference/persistgate.md)  - and a React Hook, [**`useRehydrate()`**](../api-reference/userehydrate.md).
+Usually, when it comes to rehydration, you might want to hide all (or part) of your app while the necessary stores are rehydrating. zfy provides 2 solutions out of the box to do so: a component - [**`<PersistGate/>`**](../api/persistgate.md)  - and a React Hook, [**`useRehydrate()`**](../api/userehydrate.md).
 
 ### `<PersistGate />`
 
@@ -104,7 +104,7 @@ Note that if you add stores in the`stores` array that do not have the`persist` m
 
 ### `useRehydrate()`
 
-If `<PersistGate />` doesn't fit your need, you can have finer control over what happens via [**`useRehydrate()`**](../api-reference/userehydrate.md):
+If `<PersistGate />` doesn't fit your need, you can have finer control over what happens via [**`useRehydrate()`**](../api/userehydrate.md):
 
 {% code title="src/App.tsx" %}
 ```typescript
