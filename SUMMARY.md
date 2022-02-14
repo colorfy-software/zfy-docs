@@ -8,7 +8,7 @@
 * [Persisting & rehydrating data](guides/persisting-and-rehydrating-data.md)
 * [Using middlewares](guides/using-middlewares.md)
 * [Handling multiple stores](guides/handling-multiple-stores.md)
-* [🚧 Type checking with TypeScript](guides/type-checking-with-typescript.md)
+* [Type checking with TypeScript](guides/type-checking-with-typescript.md)
 
 ## 📚 API reference
 
@@ -20,10 +20,10 @@
   * [ZfyMiddlewareType](api-reference/types/zfymiddlewaretype.md)
   * [InitStoresType](api-reference/types/initstorestype.md)
   * [InitStoresResetOptionsType](api-reference/types/initstoresresetoptionstype.md)
-* [🚧 createStore](api-reference/createstore.md)
-* [🚧 initStores](api-reference/initstores.md)
-* [🚧 PersistGate](api-reference/persistgate.md)
-* [🚧 useRehydrate](api-reference/userehydrate.md)
+* [createStore](api-reference/createstore.md)
+* [initStores](api-reference/initstores.md)
+* [PersistGate](api-reference/persistgate.md)
+* [useRehydrate](api-reference/userehydrate.md)
 
 ## 🗃 Others
 
