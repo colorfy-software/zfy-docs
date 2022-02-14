@@ -95,7 +95,7 @@ console.log(persistedStore.getState().data.firstName) // 'Jolyne'
 ```typescript
 const Component = () => {
   const itemToPurchase = useStores('groceries', data => data[0]) // 'kimchi'
-  const userName = useStores('user', data => data.firstName) // 'Joylyne'  
+  const userName = useStores('user', data => data.firstName) // 'Jolyne'  
   return null
 }
 
@@ -103,7 +103,7 @@ const Component = () => {
 
 const Component = () => {
   const itemToPurchase = simpleStore('groceries', data => data[0]) // 'kimchi'
-  const userName = persistedStore('user', data => data.firstName) // 'Joylyne'
+  const userName = persistedStore('user', data => data.firstName) // 'Jolyne'
   return null
 }
 ```
@@ -122,7 +122,7 @@ simpleStore.getState().update(data => {
 })
 ```
 
-6\. :wind\_blowing\_face: Reset it all once your user is done
+6\. :broom: Reset it all once your user is done
 
 ```typescript
 stores.reset()
