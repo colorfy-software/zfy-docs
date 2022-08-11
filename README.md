@@ -38,13 +38,13 @@ expo install @colorfy-software/zfy
 1. :hatching\_chick: Create your stores
 
 ```typescript
-import AsyncStorage from '@react-native-async-storage/async-storage'
 import {
   PersistGate,
   createStore,
   initStores,
   useRehydrate,
 } from '@colorfy-software/zfy'
+import AsyncStorage from '@react-native-async-storage/async-storage'
 
 const simpleStore = createStore('groceries', ['kimchi', 'bok choy', 'tteokbokki' ])
 const persistedStore = createStore(
