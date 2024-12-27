@@ -19,7 +19,7 @@ npm install @colorfy-software/zfy
 
 {% tab title="Expo" %}
 ```
-expo install @colorfy-software/zfy
+npx expo install @colorfy-software/zfy
 ```
 {% endtab %}
 {% endtabs %}
@@ -28,7 +28,7 @@ expo install @colorfy-software/zfy
 
 * Fully typed with TypeScript
 * Standardized access/update API backed by Immer
-* Ability to manage & consume multiples stores at once
+* Ability to manage & consume multiple stores at once
 * Simple API for store creation with custom middlewares
 * Out-of-the-box persist gate component & rehydration hook
 * Logger, persist & subscribe middlewares available via a simple flag
